@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel='stylesheet' type='text/css' href='../styles/palette.css'>
 <meta charset="UTF-8">
 <title>School Scheduling System-Login</title>
+<style>
+body{
+background-color: #d6f4f8;
+}
+.horizontalLine{
+border-bottom: 1px solid #000;
+}
+.loginBox{
+border : 1px solid #757575;
+margin: 10px 10px;
+padding: 10px 10px;
+width: 350px;
+}
+.labelPadding{
+padding-right:10px; 
+}
+h3{
+margin: 0px;}
+.container{
+ display: flex;
+  flex-wrap: nowrap;
+}
+.container > div{
+  width: 100px;
+  margin: 10px;
+  text-align: left;
+}
+</style>
 </head>
 <body>
-<div>
-<label>User Name: </label>
-<input type='text' ng-model='userName'></input>
-<label>Password: </label>
-<input type='text' ng-model='password'></input>
-</div>
+<h2>Login</h2>
+<div class="horizontalLine"></div>
+	<div class='loginBox'>
+	<h3>Please enter your credentials:</h3>
+		<div class='container'>
+			<div>
+			<label>User Name</label>
+			<label>Password</label>
+			</div>
+			<div>
+			<input type='text' ng-model='password'></input>
+			<input type='text' ng-model='userName'></input>
+			</div>
+		</div>
+		<button ng-click>Login</button>
+	</div>
 <script type="text/javascript"></script>
 </body>
 </html>
